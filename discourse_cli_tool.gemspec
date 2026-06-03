@@ -3,7 +3,7 @@
 require_relative "lib/discourse_cli/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "discourse-cli-tool"
+  spec.name = "discourse_cli_tool"
   spec.version = DiscourseCli::VERSION
   spec.authors = ["Tim Case"]
   spec.email = ["tim@2drops.net"]
