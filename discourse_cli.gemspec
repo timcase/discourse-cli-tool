@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   spec.executables = ["dsc"]
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "base64"
   spec.add_runtime_dependency "discourse_api", "~> 2.1"
   spec.add_runtime_dependency "thor", "~> 1.0"
 
