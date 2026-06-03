@@ -2,7 +2,7 @@
 
 module DiscourseCli
   module Commands
-    class Config
+    class Config < Base
     end
   end
 end

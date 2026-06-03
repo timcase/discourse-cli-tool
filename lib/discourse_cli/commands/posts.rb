@@ -2,7 +2,7 @@
 
 module DiscourseCli
   module Commands
-    class Posts
+    class Posts < Base
     end
   end
 end

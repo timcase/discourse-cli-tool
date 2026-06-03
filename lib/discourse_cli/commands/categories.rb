@@ -2,7 +2,7 @@
 
 module DiscourseCli
   module Commands
-    class Categories
+    class Categories < Base
     end
   end
 end
