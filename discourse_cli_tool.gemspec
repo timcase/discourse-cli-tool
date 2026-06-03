@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
-  spec.files = Dir["lib/**/*", "exe/*"]
+  spec.files = Dir["lib/**/*", "exe/*", "skill/**/*"]
   spec.bindir = "exe"
   spec.executables = ["dsc"]
   spec.require_paths = ["lib"]
