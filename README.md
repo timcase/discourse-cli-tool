@@ -107,6 +107,19 @@ dsc topics list --json | jq '.[].title'
 dsc categories list --json | jq '.[] | select(.name == "General") | .id'
 ```
 
+## LLM Agent Skill
+
+`dsc` ships with a skill file that teaches LLM coding agents (Claude Code, Codex, Gemini) how to use the CLI. Install it with:
+
+```bash
+dsc skill install           # installs for all three agents
+dsc skill install --claude  # Claude Code only (~/.claude/skills/dsc)
+dsc skill install --codex   # Codex only (~/.codex/skills/dsc)
+dsc skill install --gemini  # Gemini CLI only (~/.gemini/skills/dsc)
+```
+
+The skill is installed as a symlink and updates automatically when you upgrade the gem.
+
 ## Requirements
 
 - Ruby >= 2.7
