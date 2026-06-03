@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Tim Case"]
   spec.email = ["tim@2drops.net"]
   spec.summary = "CLI tool for managing Discourse forums from the command line"
-  spec.homepage = "https://github.com/timcase/dsc"
+  spec.homepage = "https://github.com/timcase/discourse-cli-tool"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
 
