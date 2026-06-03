@@ -26,7 +26,7 @@ module DiscourseCli
         }
         FileUtils.mkdir_p(File.dirname(self.class.config_path))
         File.write(self.class.config_path, YAML.dump(data))
-        puts "Saved config for site '#{options[:site]}'"
+        formatter.print_success("Saved config for site '#{options[:site]}'")
       end
 
       desc "list", "List configured sites"
