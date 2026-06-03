@@ -3,11 +3,11 @@
 require_relative "lib/discourse_cli/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "dsc"
+  spec.name = "discourse-cli-tool"
   spec.version = DiscourseCli::VERSION
   spec.authors = ["Tim Case"]
   spec.email = ["tim@2drops.net"]
-  spec.summary = "Command-line interface for Discourse"
+  spec.summary = "CLI tool for managing Discourse forums from the command line"
   spec.homepage = "https://github.com/timcase/dsc"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
