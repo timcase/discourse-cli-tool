@@ -1,17 +1,17 @@
-# discourse_cli
+# discourse-cli-tool
 
 Command-line interface for [Discourse](https://discourse.org), built on the [`discourse_api`](https://github.com/discourse/discourse_api) gem. Manage categories, topics, and posts from the terminal.
 
 ## Installation
 
 ```bash
-gem install discourse_cli
+gem install discourse-cli-tool
 ```
 
 Or add to your Gemfile:
 
 ```ruby
-gem "discourse_cli"
+gem "discourse-cli-tool"
 ```
 
 ## Configuration
