@@ -22,7 +22,7 @@ module DiscourseCli
 
       desc "create", "Create a topic (opens $EDITOR if --raw not given)"
       option :title,    type: :string, required: true
-      option :category, type: :string
+      option :category, type: :numeric, desc: "Category ID"
       option :tags,     type: :string, desc: "Comma-separated tags"
       option :raw,      type: :string
       def create
@@ -37,7 +37,7 @@ module DiscourseCli
 
       desc "update ID", "Update a topic"
       option :title,    type: :string
-      option :category, type: :string, desc: "Category slug or name"
+      option :category, type: :numeric, desc: "Category ID"
       option :raw,      type: :string, desc: "Replace first post content (opens $EDITOR if not given and no other options)"
       def update(id)
         updated_anything = false
@@ -48,13 +48,7 @@ module DiscourseCli
         end
 
         if options[:category]
-          cats = client.categories
-          cat = cats.find { |c| c["slug"] == options[:category] || c["name"] == options[:category] }
-          unless cat
-            $stderr.puts "Category not found: #{options[:category]}"
-            exit 1
-          end
-          client.recategorize_topic(id.to_i, cat["id"])
+          client.recategorize_topic(id.to_i, options[:category])
           updated_anything = true
         end
 
